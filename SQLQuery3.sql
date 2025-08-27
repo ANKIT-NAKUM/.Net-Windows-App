@@ -1,0 +1,1 @@
+﻿EXEC sp_rename 'Register.Gender', 'Gender1', 'COLUMN';
