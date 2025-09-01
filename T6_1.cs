@@ -54,5 +54,20 @@ namespace Windows_Project
                 }
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void news_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T6_1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
