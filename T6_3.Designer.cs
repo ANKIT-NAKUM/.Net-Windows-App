@@ -1,10 +1,4 @@
-﻿using System.Drawing;
-using System.Drawing.Printing;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace Windows_Project
+﻿namespace Windows_Project
 {
     partial class T6_3
     {
@@ -34,122 +28,98 @@ namespace Windows_Project
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            numeric = new TextBox();
-            upper = new TextBox();
-            label2 = new Label();
-            characters = new TextBox();
-            label3 = new Label();
-            sub = new Button();
-            display = new Label();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNumeric = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtUppercase = new System.Windows.Forms.TextBox();
+            this.txtChars = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(8, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(168, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Numeric Data Only:-";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Numeric Data Only :";
             // 
-            // numeric
+            // txtNumeric
             // 
-            numeric.Location = new Point(243, 27);
-            numeric.Name = "numeric";
-            numeric.Size = new Size(145, 30);
-            numeric.TabIndex = 1;
-            numeric.KeyPress += numkey;
-            // 
-            // upper
-            // 
-            upper.Location = new Point(243, 90);
-            upper.Name = "upper";
-            upper.Size = new Size(145, 30);
-            upper.TabIndex = 3;
-            upper.KeyPress += upperkey;
+            this.txtNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeric.Location = new System.Drawing.Point(343, 83);
+            this.txtNumeric.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNumeric.Name = "txtNumeric";
+            this.txtNumeric.Size = new System.Drawing.Size(259, 26);
+            this.txtNumeric.TabIndex = 1;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(8, 93);
-            label2.Name = "label2";
-            label2.Size = new Size(183, 23);
-            label2.TabIndex = 2;
-            label2.Text = "Uppercase Data Only:-";
-            // 
-            // characters
-            // 
-            characters.Location = new Point(243, 154);
-            characters.Name = "characters";
-            characters.Size = new Size(145, 30);
-            characters.TabIndex = 5;
-            characters.TextChanged += characters_TextChanged;
-            characters.KeyPress += charonly;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(104, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Uppercase Data Only :";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(8, 157);
-            label3.Name = "label3";
-            label3.Size = new Size(177, 23);
-            label3.TabIndex = 4;
-            label3.Text = "Character Data Only:-";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(104, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Character Data Only :";
             // 
-            // sub
+            // txtUppercase
             // 
-            sub.Location = new Point(149, 222);
-            sub.Name = "sub";
-            sub.Size = new Size(94, 29);
-            sub.TabIndex = 6;
-            sub.Text = "Submit";
-            sub.UseVisualStyleBackColor = true;
-            sub.Click += sub_Click;
+            this.txtUppercase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUppercase.Location = new System.Drawing.Point(343, 148);
+            this.txtUppercase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUppercase.Name = "txtUppercase";
+            this.txtUppercase.Size = new System.Drawing.Size(259, 26);
+            this.txtUppercase.TabIndex = 4;
+            this.txtUppercase.TextChanged += new System.EventHandler(this.txtUppercase_TextChanged);
             // 
-            // display
+            // txtChars
             // 
-            display.AutoSize = true;
-            display.Location = new Point(173, 297);
-            display.Name = "display";
-            display.Size = new Size(46, 23);
-            display.TabIndex = 7;
-            display.Text = "Data";
-            display.Visible = false;
+            this.txtChars.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChars.Location = new System.Drawing.Point(343, 208);
+            this.txtChars.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtChars.Name = "txtChars";
+            this.txtChars.Size = new System.Drawing.Size(259, 26);
+            this.txtChars.TabIndex = 5;
             // 
             // T6_3
             // 
-            AutoScaleDimensions = new SizeF(10F, 23F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            AutoSize = true;
-            ClientSize = new Size(429, 338);
-            Controls.Add(display);
-            Controls.Add(sub);
-            Controls.Add(characters);
-            Controls.Add(label3);
-            Controls.Add(upper);
-            Controls.Add(label2);
-            Controls.Add(numeric);
-            Controls.Add(label1);
-            Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
-            Margin = new Padding(4, 3, 4, 3);
-            Name = "T6_3";
-            Text = "RestrictedPolicy";
-            Load += T6_3_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.Controls.Add(this.txtChars);
+            this.Controls.Add(this.txtUppercase);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtNumeric);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "T6_3";
+            this.Text = "Window6";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private Label label1;
-        private TextBox numeric;
-        private TextBox upper;
-        private Label label2;
-        private TextBox characters;
-        private Label label3;
-        private Button sub;
-        private Label display;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNumeric;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUppercase;
+        private System.Windows.Forms.TextBox txtChars;
     }
 }

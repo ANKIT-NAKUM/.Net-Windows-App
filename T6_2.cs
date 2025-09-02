@@ -20,7 +20,11 @@ namespace Windows_Project
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBox1.SelectedItem != null)
+            {
+                label2.Text = "Selected: " + listBox1.SelectedItem.ToString();
 
+            }
         }
 
         private void count_btn_Click(object sender, EventArgs e)
@@ -33,6 +37,7 @@ namespace Windows_Project
         {
             listBox1.Items.Add("Education");
             listBox1.Items.Add("Food for all");
+            listBox1.Items.Add("Freedom Of Speech");
             listBox1.Items.Add("Good Books");
             listBox1.Items.Add("Good Movies");
 
@@ -60,5 +65,14 @@ namespace Windows_Project
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Windows_Project
 {
@@ -17,45 +8,38 @@ namespace Windows_Project
         public T6_3()
         {
             InitializeComponent();
+            txtNumeric.KeyPress += TxtNumeric_KeyPress;
+            txtUppercase.KeyPress += TxtUppercase_KeyPress;
+            txtChars.KeyPress += TxtChars_KeyPress;
+
+            txtUppercase.CharacterCasing = CharacterCasing.Upper;
         }
 
-        private void sub_Click(object sender, EventArgs e)
+        private void TxtNumeric_KeyPress(object sender, KeyPressEventArgs e)
         {
-            display.Visible = true;
-            display.Text = numeric.Text + "\n" + upper.Text + "\n" + characters.Text;
-
-        }
-
-        private void upperkey(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsUpper(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void numkey(object sender, KeyPressEventArgs e)
+        private void TxtUppercase_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void charonly(object sender, KeyPressEventArgs e)
+        private void TxtChars_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void characters_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void T6_3_Load(object sender, EventArgs e)
+        private void txtUppercase_TextChanged(object sender, System.EventArgs e)
         {
 
         }
