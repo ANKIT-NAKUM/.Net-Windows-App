@@ -54,6 +54,7 @@
             this.txtNumeric.Name = "txtNumeric";
             this.txtNumeric.Size = new System.Drawing.Size(259, 26);
             this.txtNumeric.TabIndex = 1;
+            this.txtNumeric.TextChanged += new System.EventHandler(this.txtNumeric_TextChanged);
             // 
             // label2
             // 
@@ -107,7 +108,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "T6_3";
-            this.Text = "Window6";
+            this.Text = "T6_3";
             this.ResumeLayout(false);
             this.PerformLayout();
 

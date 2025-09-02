@@ -54,5 +54,10 @@ namespace Windows_Project
         {
 
         }
+
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

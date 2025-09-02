@@ -43,5 +43,10 @@ namespace Windows_Project
         {
 
         }
+
+        private void txtNumeric_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

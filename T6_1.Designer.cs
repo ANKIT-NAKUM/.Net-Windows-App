@@ -75,6 +75,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(275, 22);
             this.name.TabIndex = 5;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // male
             // 
@@ -229,7 +230,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "T6_1";
-            this.Text = "Window4";
+            this.Text = "Customer Feedback";
             this.Load += new System.EventHandler(this.Window4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

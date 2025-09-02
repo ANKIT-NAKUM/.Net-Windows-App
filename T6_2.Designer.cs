@@ -155,7 +155,7 @@
             this.Controls.Add(this.listBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "T6_2";
-            this.Text = "Tut6_q2";
+            this.Text = "T6_2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
