@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Display_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display_data.Designer.cs">
+      <DependentUpon>Display_data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Popup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <Compile Include="T6_3.Designer.cs">
       <DependentUpon>T6_3.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Display_data.resx">
+      <DependentUpon>Display_data.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Popup.resx">
       <DependentUpon>Popup.cs</DependentUpon>
     </EmbeddedResource>
