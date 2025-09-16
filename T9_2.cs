@@ -8,34 +8,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Windows_Project
 {
-    public partial class Display_data : Form
+    public partial class T9_2 : Form
     {
-        string connection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DotNet\\Windows_Project\\Registration.mdf;Integrated Security=True";
-        public Display_data()
+        string connection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\DotNet\\Windows_Project\\T9_1.mdf;Integrated Security=True";
+        public T9_2()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             SqlConnection con = new SqlConnection(connection);
             con.Open();
-            //SqlDataAdapter da= new SqlDataAdapter("select * from Register", con);
-            SqlDataAdapter da = new SqlDataAdapter("select name,password from Register", con);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM students WHERE name = @name", con);
+            cmd.Parameters.AddWithValue("@name", name.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            da.Fill(dt);
-
+            sda.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
-
-            //insert update delete and display , calculator
-            //armstrong ,palindrome , pattern,array
-            //method overloading,method overriding,inheritance
-
         }
     }
 }

@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -135,6 +135,18 @@
     <Compile Include="T6_3.Designer.cs">
       <DependentUpon>T6_3.cs</DependentUpon>
     </Compile>
+    <Compile Include="T9_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T9_1.Designer.cs">
+      <DependentUpon>T9_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T9_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T9_2.Designer.cs">
+      <DependentUpon>T9_2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Display_data.resx">
       <DependentUpon>Display_data.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +192,12 @@
     <EmbeddedResource Include="T6_3.resx">
       <DependentUpon>T6_3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="T9_1.resx">
+      <DependentUpon>T9_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T9_2.resx">
+      <DependentUpon>T9_2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -200,6 +218,13 @@
     <Content Include="Registration_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Registration.mdf</DependentUpon>
+    </Content>
+    <Content Include="T9_1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="T9_1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>T9_1.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
