@@ -73,6 +73,18 @@
     <Compile Include="Popup.Designer.cs">
       <DependentUpon>Popup.cs</DependentUpon>
     </Compile>
+    <Compile Include="T10_Q2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T10_Q2_1.Designer.cs">
+      <DependentUpon>T10_Q2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T10_Q2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T10_Q2_2.Designer.cs">
+      <DependentUpon>T10_Q2_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="T6_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     <EmbeddedResource Include="Popup.resx">
       <DependentUpon>Popup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="T10_Q2_1.resx">
+      <DependentUpon>T10_Q2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T10_Q2_2.resx">
+      <DependentUpon>T10_Q2_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="T6_1.resx">
       <DependentUpon>T6_1.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +236,13 @@
     <Content Include="Registration_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Registration.mdf</DependentUpon>
+    </Content>
+    <Content Include="T10.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="T10_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>T10.mdf</DependentUpon>
     </Content>
     <Content Include="T9_1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
