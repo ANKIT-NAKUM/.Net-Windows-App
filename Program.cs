@@ -17,7 +17,7 @@ namespace Windows_Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Calculator()); // after new write a class name of new file.
-            Application.Run(new T9_2());
+            Application.Run(new T10_Q3());
         }
     }
 }

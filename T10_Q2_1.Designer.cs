@@ -63,6 +63,7 @@
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer ID";
+            this.label1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -73,6 +74,7 @@
             this.label2.Size = new System.Drawing.Size(131, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Customer Name";
+            this.label2.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -83,6 +85,7 @@
             this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Order Date";
+            this.label3.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -93,6 +96,7 @@
             this.label4.Size = new System.Drawing.Size(83, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ship Date";
+            this.label4.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -103,6 +107,7 @@
             this.label5.Size = new System.Drawing.Size(114, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Order Amount";
+            this.label5.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -113,6 +118,7 @@
             this.label6.Size = new System.Drawing.Size(120, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Payment Mode";
+            this.label6.UseWaitCursor = true;
             // 
             // label7
             // 
@@ -123,6 +129,7 @@
             this.label7.Size = new System.Drawing.Size(76, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Remarks";
+            this.label7.UseWaitCursor = true;
             // 
             // comboBox1
             // 
@@ -132,6 +139,8 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(220, 28);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.UseWaitCursor = true;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -141,6 +150,8 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(220, 28);
             this.comboBox2.TabIndex = 8;
+            this.comboBox2.UseWaitCursor = true;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -150,6 +161,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(220, 28);
             this.comboBox3.TabIndex = 9;
+            this.comboBox3.UseWaitCursor = true;
             // 
             // textBox1
             // 
@@ -159,6 +171,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(220, 27);
             this.textBox1.TabIndex = 10;
+            this.textBox1.UseWaitCursor = true;
             // 
             // textBox2
             // 
@@ -168,6 +181,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(220, 27);
             this.textBox2.TabIndex = 11;
+            this.textBox2.UseWaitCursor = true;
             // 
             // textBox3
             // 
@@ -177,6 +191,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(220, 27);
             this.textBox3.TabIndex = 12;
+            this.textBox3.UseWaitCursor = true;
             // 
             // textBox4
             // 
@@ -186,6 +201,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(220, 27);
             this.textBox4.TabIndex = 13;
+            this.textBox4.UseWaitCursor = true;
             // 
             // button1
             // 
@@ -196,6 +212,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "View";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
             // 
             // button2
             // 
@@ -206,6 +223,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "New";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseWaitCursor = true;
             // 
             // button3
             // 
@@ -216,6 +234,7 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseWaitCursor = true;
             // 
             // button4
             // 
@@ -226,6 +245,7 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseWaitCursor = true;
             // 
             // button5
             // 
@@ -236,6 +256,7 @@
             this.button5.TabIndex = 18;
             this.button5.Text = "Edit";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseWaitCursor = true;
             // 
             // button6
             // 
@@ -246,6 +267,7 @@
             this.button6.TabIndex = 19;
             this.button6.Text = "Update";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseWaitCursor = true;
             // 
             // button7
             // 
@@ -256,6 +278,7 @@
             this.button7.TabIndex = 20;
             this.button7.Text = "Delete";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseWaitCursor = true;
             // 
             // dataGridView1
             // 
@@ -266,6 +289,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(652, 187);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.UseWaitCursor = true;
             // 
             // T10_Q2_1
             // 
@@ -294,9 +318,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Name = "T10_Q2_1";
             this.Text = "Order Entry";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.T10_Q2_1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

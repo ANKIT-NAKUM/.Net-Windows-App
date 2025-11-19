@@ -40,11 +40,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.orderamount = new System.Windows.Forms.TextBox();
+            this.shipdate = new System.Windows.Forms.TextBox();
+            this.orderdate = new System.Windows.Forms.TextBox();
+            this.paymentmode = new System.Windows.Forms.ComboBox();
+            this.remarks = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -172,50 +172,50 @@
             this.comboBox2.Size = new System.Drawing.Size(208, 28);
             this.comboBox2.TabIndex = 11;
             // 
-            // textBox2
+            // orderamount
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(163, 187);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 27);
-            this.textBox2.TabIndex = 12;
+            this.orderamount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.orderamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderamount.Location = new System.Drawing.Point(163, 187);
+            this.orderamount.Name = "orderamount";
+            this.orderamount.Size = new System.Drawing.Size(208, 27);
+            this.orderamount.TabIndex = 12;
             // 
-            // textBox3
+            // shipdate
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(163, 156);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 27);
-            this.textBox3.TabIndex = 13;
+            this.shipdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shipdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shipdate.Location = new System.Drawing.Point(163, 156);
+            this.shipdate.Name = "shipdate";
+            this.shipdate.Size = new System.Drawing.Size(208, 27);
+            this.shipdate.TabIndex = 13;
             // 
-            // textBox4
+            // orderdate
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(163, 125);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 27);
-            this.textBox4.TabIndex = 14;
+            this.orderdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.orderdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderdate.Location = new System.Drawing.Point(163, 125);
+            this.orderdate.Name = "orderdate";
+            this.orderdate.Size = new System.Drawing.Size(208, 27);
+            this.orderdate.TabIndex = 14;
             // 
-            // comboBox3
+            // paymentmode
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(163, 218);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(208, 28);
-            this.comboBox3.TabIndex = 15;
+            this.paymentmode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentmode.FormattingEnabled = true;
+            this.paymentmode.Location = new System.Drawing.Point(163, 218);
+            this.paymentmode.Name = "paymentmode";
+            this.paymentmode.Size = new System.Drawing.Size(208, 28);
+            this.paymentmode.TabIndex = 15;
             // 
-            // textBox5
+            // remarks
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(163, 251);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(208, 27);
-            this.textBox5.TabIndex = 16;
+            this.remarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.remarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remarks.Location = new System.Drawing.Point(163, 251);
+            this.remarks.Name = "remarks";
+            this.remarks.Size = new System.Drawing.Size(208, 27);
+            this.remarks.TabIndex = 16;
             // 
             // button2
             // 
@@ -226,6 +226,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "New";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -299,11 +300,11 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.remarks);
+            this.Controls.Add(this.paymentmode);
+            this.Controls.Add(this.orderdate);
+            this.Controls.Add(this.shipdate);
+            this.Controls.Add(this.orderamount);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -338,11 +339,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox orderamount;
+        private System.Windows.Forms.TextBox shipdate;
+        private System.Windows.Forms.TextBox orderdate;
+        private System.Windows.Forms.ComboBox paymentmode;
+        private System.Windows.Forms.TextBox remarks;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
