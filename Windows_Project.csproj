@@ -73,18 +73,6 @@
     <Compile Include="Popup.Designer.cs">
       <DependentUpon>Popup.cs</DependentUpon>
     </Compile>
-    <Compile Include="T10_Q2_1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="T10_Q2_1.Designer.cs">
-      <DependentUpon>T10_Q2_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="T10_Q2_2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="T10_Q2_2.Designer.cs">
-      <DependentUpon>T10_Q2_2.cs</DependentUpon>
-    </Compile>
     <Compile Include="T10_Q3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,12 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Popup.resx">
       <DependentUpon>Popup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="T10_Q2_1.resx">
-      <DependentUpon>T10_Q2_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="T10_Q2_2.resx">
-      <DependentUpon>T10_Q2_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="T10_Q3.resx">
       <DependentUpon>T10_Q3.cs</DependentUpon>
