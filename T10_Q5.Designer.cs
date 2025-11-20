@@ -36,18 +36,19 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(27, 24);
+            this.dataGridView.Location = new System.Drawing.Point(12, 12);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(751, 172);
+            this.dataGridView.Size = new System.Drawing.Size(751, 227);
             this.dataGridView.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(284, 245);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 56);
+            this.button1.Size = new System.Drawing.Size(113, 45);
             this.button1.TabIndex = 1;
             this.button1.Text = "Fill";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(776, 321);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView);
             this.Name = "T10_Q5";

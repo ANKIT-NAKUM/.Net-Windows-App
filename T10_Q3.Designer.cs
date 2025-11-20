@@ -38,14 +38,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 80);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(261, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(98, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quare No.";
             // 
             // cmbQueryNo
             // 
+            this.cmbQueryNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.cmbQueryNo.FormattingEnabled = true;
             this.cmbQueryNo.Items.AddRange(new object[] {
             "1",
@@ -58,16 +60,17 @@
             "8",
             "9",
             "10"});
-            this.cmbQueryNo.Location = new System.Drawing.Point(158, 80);
+            this.cmbQueryNo.Location = new System.Drawing.Point(365, 65);
             this.cmbQueryNo.Name = "cmbQueryNo";
-            this.cmbQueryNo.Size = new System.Drawing.Size(121, 24);
+            this.cmbQueryNo.Size = new System.Drawing.Size(20, 31);
             this.cmbQueryNo.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(386, 80);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(412, 61);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(87, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
